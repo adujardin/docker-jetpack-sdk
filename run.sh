@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#xhost +local:$USER
+xhost +local:$USER
 docker run -it \
     --name=jetpack-sdk \
     --rm=true \
@@ -11,4 +11,4 @@ docker run -it \
     --user "$(id -u):$(id -g)" \
     --env="DISPLAY=$DISPLAY" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-    jetpack-sdk /bin/bash
+    adujardin/jetson-jetpack /bin/bash

@@ -30,7 +30,7 @@ RUN sudo apt-get update && sudo apt-get install -y \
     npm
 
 COPY sdkmanager_1.*_amd64.deb /
-COPY entrypoint.sh /entrypoint.sh
+#COPY entrypoint.sh /entrypoint.sh
 RUN sudo apt-get install -y /sdkmanager_1.*_amd64.deb
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+#ENTRYPOINT [ "/entrypoint.sh" ]
