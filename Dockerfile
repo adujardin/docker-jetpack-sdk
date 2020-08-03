@@ -29,8 +29,8 @@ RUN sudo apt-get update && sudo apt-get install -y \
     firefox \
     npm
 
-COPY sdkmanager_1.0.1-5538_amd64.deb /
+COPY sdkmanager_1.*_amd64.deb /
 COPY entrypoint.sh /entrypoint.sh
-RUN sudo apt-get install -y /sdkmanager_1.0.1-5538_amd64.deb
+RUN sudo apt-get install -y /sdkmanager_1.*_amd64.deb
 
 ENTRYPOINT [ "/entrypoint.sh" ]

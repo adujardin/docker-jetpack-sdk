@@ -1,4 +1,4 @@
-# JetPack SDK in Docker for simple and clean flashing of a Jetson TX2
+# JetPack SDK in Docker for simple and clean flashing
 
 This repository is connected to the description as a medium.com article at:
 
