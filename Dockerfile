@@ -27,6 +27,10 @@ RUN sudo apt-get update && sudo apt-get install -y \
     libcanberra-gtk3-module \
     nodejs \
     firefox \
+    iproute2 \
+    dnsutils \
+    iptables \
+    network-manager \
     npm
 
 COPY sdkmanager_1.*_amd64.deb /
